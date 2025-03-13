@@ -1,4 +1,4 @@
-import { assets } from "../assets/assets";
+import { globalAssets } from "../assets/assets";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="max-w-[1280px w-full mx-auto flex justify-center items-center flex-col text-neutral-400">
           <img
             className="aspect-square w-[100px]"
-            src={assets.alfaBravoLogo}
+            src={globalAssets.alfaBravoLogo}
             alt="Alfabravo logo"
           />
           <p>©2025 Alfa Bravo Inc.</p>

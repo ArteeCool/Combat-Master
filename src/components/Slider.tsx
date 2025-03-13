@@ -2,12 +2,11 @@ import { useRef } from "react";
 import { FaGreaterThan, FaLessThan } from "react-icons/fa";
 
 interface Props {
-  children: Record<string, string>;
+  children: Array<string>;
 }
 
 const Slider = ({ children }: Props) => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const items = Object.values(children);
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
@@ -21,7 +20,7 @@ const Slider = ({ children }: Props) => {
 
   return (
     <div className="w-full mx-auto p-4">
-      <div className="relative w-full max-w-[1000px] mx-auto">
+      <div className="relative w-full max-w-[800px] mx-auto">
         <button
           className="absolute bg-neutral-700/75 text-white top-1/2 -left-4 w-8 h-8 rounded-full -translate-y-1/2 z-10 flex items-center justify-center text-lg"
           onClick={() => scroll("left")}
@@ -32,7 +31,7 @@ const Slider = ({ children }: Props) => {
           ref={scrollRef}
           className="w-full mx-auto flex overflow-x-auto no-scrollbar snap-mandatory snap-x"
         >
-          {items.map((src, index) => (
+          {children.map((src, index) => (
             <div
               key={index}
               className="flex-shrink-0 snap-center w-full max-w-[400px]"

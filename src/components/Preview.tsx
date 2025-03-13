@@ -1,4 +1,4 @@
-import { assets } from "../assets/assets";
+import { globalAssets, homeAssets } from "../assets/assets";
 import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
@@ -8,21 +8,24 @@ const Preview = () => {
       <div className="inset-0 w-full h-[500px] relative">
         <video
           className="select-none pointer-events-none object-cover w-full h-full blur-xs brightness-25"
-          src={assets.previewVideo}
+          src={homeAssets.previewVideo}
           autoPlay
           loop
           muted
         />
         <div className="absolute top-1/2 left-1/2 -translate-1/2 flex flex-col items-center gap-4">
-          <img src={assets.CombatMaster} className="w-[300px] object-cover" />
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <img
+            src={globalAssets.CombatMaster}
+            className="w-[300px] object-cover"
+          />
+          <div className="flex flex-col md:flex-row justify-center gap-4">
             <a
               href="https://store.steampowered.com/app/2281730/Combat_Master_Season_3/"
               className="w-[150px] sm:w-[250px]"
             >
               <img
                 className="w-full object-contain"
-                src={assets.downloadSteam}
+                src={homeAssets.downloadSteam}
                 alt="Steam download button"
               />
             </a>
@@ -32,7 +35,7 @@ const Preview = () => {
             >
               <img
                 className="w-full object-contain"
-                src={assets.downloadAppStore}
+                src={homeAssets.downloadAppStore}
                 alt="App store download button"
               />
             </a>
@@ -42,7 +45,7 @@ const Preview = () => {
             >
               <img
                 className="w-full object-contain"
-                src={assets.downloadGooglePlay}
+                src={homeAssets.downloadGooglePlay}
                 alt="Google play download button"
               />
             </a>

@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { assets } from "../assets/assets";
+import { globalAssets } from "../assets/assets";
 import Navbar from "./Navbar";
 import { MdMenu } from "react-icons/md";
 import { useState } from "react";
@@ -19,7 +19,7 @@ const Header = () => {
           <Link to={"/"}>
             <img
               className="aspect-square w-20"
-              src={assets.alfaBravoLogo}
+              src={globalAssets.alfaBravoLogo}
               alt="Logo of Alfa Bravo"
             />
           </Link>

@@ -5,7 +5,7 @@ interface Props {
   link: string;
 }
 
-const UpdateCard = ({ image, title, date, link }: Props) => {
+const ReleaseCard = ({ image, title, date, link }: Props) => {
   return (
     <div className="rounded-lg w-full max-w-[350px]">
       <a href={link} className="block">
@@ -21,4 +21,4 @@ const UpdateCard = ({ image, title, date, link }: Props) => {
   );
 };
 
-export default UpdateCard;
+export default ReleaseCard;

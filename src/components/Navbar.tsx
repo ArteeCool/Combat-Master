@@ -8,9 +8,9 @@ const Navbar = ({ className }: Props) => {
   return (
     <ul className={`${className} flex gap-16 text-lg`}>
       <Link to={"/"}>Home</Link>
-      <Link to={"/News"}>News</Link>
-      <Link to={"/Updates"}>Updates</Link>
-      <Link to={"/FAQ"}>FAQ</Link>
+      <Link to={"/news"}>News</Link>
+      <Link to={"/updates"}>Updates</Link>
+      <Link to={"/faq"}>FAQ</Link>
     </ul>
   );
 };

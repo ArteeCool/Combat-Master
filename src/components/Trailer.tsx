@@ -1,7 +1,7 @@
 const Trailer = () => {
   return (
     <>
-      <div className="w-full min-h-[50vh] text-lg sm:text-xl md:text-2xl text-neutral-300">
+      <div className="w-full min-h-[50vh] text-md sm:text-lg md:text-xl text-neutral-300">
         <div className="flex flex-col lg:flex-row justify-around p-8 gap-10 items-center">
           <div className="flex flex-col w-full max-w-[800px]">
             <h1>About</h1>
